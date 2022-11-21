@@ -1,0 +1,67 @@
+body, :root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+nav h2 {
+  margin: auto;
+  font-size: 2em;
+}
+
+nav {
+  display: flex;
+  padding: 2vh 3rem;
+  background: #073254;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo {
+  color: #fff;
+  font-size: 2em;
+  font-weight: 500;
+  margin-left: -10px;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  color: #111;
+  background: rgb(255, 255, 255);
+}
+
+nav .menu-btn i {
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 920px) {
+  nav ul {
+    display: none;
+  }
+}

@@ -1,0 +1,52 @@
+#roulette {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+#roulette img {
+  width: 100vw;
+  filter: blur(2px);
+}
+
+#roulette h3 {
+  position: absolute;
+  bottom: 7vw;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(173, 173, 173, 0.45);
+  box-shadow: 0 0 1rem rgb(173, 173, 173);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+#roulette > * {
+  display: none;
+}
+
+#roulette > .roulette-focused {
+  display: block;
+}
+
+@keyframes item-out {
+  0% {
+    transform: scaleX(1);
+    width: 100vw;
+  }
+
+  100% {
+    transform: scaleX(0);
+    transform-origin: 0;
+    width: 0;
+  }
+}
+
+@keyframes item-in {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100vw;
+  }
+}

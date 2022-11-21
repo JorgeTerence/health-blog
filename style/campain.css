@@ -1,0 +1,27 @@
+body {
+  background-color: hsl(81, 33%, 79%);
+}
+
+h1 {
+  margin-left: 1.8rem;
+}
+
+span.blood {
+  color: hsl(350, 84%, 38%);
+}
+
+main {
+  width: 80vw;
+  padding: 1rem;
+  margin: auto;
+  background-color: white;
+  border-radius: 0.6rem;
+  box-shadow: 1px 1px 3px rgba(0 0 0 / 0.3);
+}
+
+img {
+  display: block;
+  width: 100%;
+  margin: auto;
+  border-radius: 0.5rem;
+}
