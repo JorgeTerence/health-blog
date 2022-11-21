@@ -11,8 +11,10 @@
 
 #roulette h3 {
   position: absolute;
-  bottom: 7vw;
+  bottom: 0;
   left: 50%;
+  width: 70%;
+  text-align: center;
   transform: translateX(-50%);
   background-color: rgba(173, 173, 173, 0.45);
   box-shadow: 0 0 1rem rgb(173, 173, 173);

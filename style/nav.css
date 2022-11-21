@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&display=swap');
+
 body, :root {
   margin: 0;
   padding: 0;
@@ -5,24 +9,27 @@ body, :root {
   font-family: "Poppins", sans-serif;
 }
 
+span, p, ul {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
 nav h2 {
   margin: auto;
-  font-size: 2em;
+  font-size: 1.7em;
 }
 
 nav {
   display: flex;
-  padding: 2vh 3rem;
+  padding: 1.5vh 2rem;
   background: #073254;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 nav .logo {
   color: #fff;
-  font-size: 2em;
+  font-size: 1.7em;
   font-weight: 500;
-  margin-left: -10px;
   text-decoration: none;
 }
 
@@ -45,19 +52,6 @@ nav ul li a {
   border-radius: 5px;
   letter-spacing: 1px;
   transition: all 0.3s ease;
-}
-
-nav ul li a.active,
-nav ul li a:hover {
-  color: #111;
-  background: rgb(255, 255, 255);
-}
-
-nav .menu-btn i {
-  color: #fff;
-  font-size: 22px;
-  cursor: pointer;
-  display: none;
 }
 
 @media (max-width: 920px) {

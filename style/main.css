@@ -1,6 +1,12 @@
 :root {
-  --greysonnnnnn: #dddddd;
-  --active: hsl(110, 60%, 38%);
+  --greysonnnnnn: #e1eaee;
+  --active: hsl(110, 52%, 26%);
+}
+
+section > img, a > img {
+  width: 90%;
+  display: block;
+  margin: auto;
 }
 
 .articles {
@@ -18,16 +24,24 @@
 }
 
 .articles > div div {
-  padding: 0.6rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem;
   margin-left: 1rem;
   transition: all 300ms;
 }
 
+.articles h3 {
+  margin: 0;
+}
+
 .articles > div img {
-  max-height: clamp(10vw, 6.5rem, 25vw);
   border-bottom-left-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
-  transition: all 300ms;
+  width: 20%;
+  height: clamp(20vw, 80px, 5vw);
+  object-fit: cover;
 }
 
 .articles a {
@@ -42,8 +56,8 @@
 
 span.author {
   display: block;
-  color: #353535;
-  font-family: 'Fira Mono', 'Courier New', Courier, monospace;
+  color: #494949;
+  font-family: 'DM Mono', 'Courier New', Courier, monospace;
   margin-top: 5px;
 }
 
@@ -51,14 +65,41 @@ hr {
   margin: 1rem 0.6rem;
 }
 
+section:not(.articles) {
+  margin-inline: 1.5rem;
+}
+
+#newsletter div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-block: 1rem;
+}
+
+button {
+  border: 2px solid var(--active);
+  background-color: rgb(34, 204, 43);
+  border-radius: 0.4em;
+  padding: 0.6em 1em;
+  font-size: 1.2em;
+  margin-top: -2rem;
+}
+
+#email {
+  width: 50%;
+}
+
 footer {
   background-color: var(--active);
-  display: flex;
-  padding: 0.7rem;
-  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  color: whitesmoke;
 }
 
 footer ul {
-  list-style-type: none;
+  list-style-type: disc;
+}
+
+footer a {
+  color: white;
 }
 

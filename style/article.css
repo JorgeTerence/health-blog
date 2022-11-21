@@ -28,16 +28,15 @@ main {
 }
 
 footer {
-  font-size: 20px;
-  margin: auto;
-  width: 18%;
-  height: 10%;
-  padding: 0px;
+  width: 75vw;
+  padding: 0.3rem 1.2rem;
+  margin: 1.5rem auto;
   background-color: white;
+  box-shadow: 1px 1px 3px rgba(0 0 0 / 0.3);
   border-radius: 10px;
-  text-align: center;
+  font-size: 1.2em;
 }
 
 ul {
-  list-style: none;
+  list-style: upper-roman;
 }
